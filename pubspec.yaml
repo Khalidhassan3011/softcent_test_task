@@ -23,6 +23,9 @@ dependencies:
   # state management
   get: 4.6.1
 
+  # local storage
+  get_storage: any
+
   # font
   google_fonts: ^2.3.1
 
