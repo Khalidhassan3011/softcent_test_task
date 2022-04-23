@@ -20,6 +20,7 @@ const Map<String, String> en = {
 
   // error
   "invalidNumber": "You try to input invalid number",
+  "invalidOtp": "Invalid OTP",
 
   // hints
   "termsRequest": "Agree Terms & Conditions to continue",

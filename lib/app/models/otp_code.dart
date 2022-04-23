@@ -5,14 +5,15 @@ class OtpCode {
     required this.otpCode,
   });
 
-  int otpCode;
+  // length 5
+  String otpCode;
 
   factory OtpCode.fromRawJson(String str) => OtpCode.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
 
   factory OtpCode.fromJson(Map<String, dynamic> json) => OtpCode(
-    otpCode: json["otp_code"],
+    otpCode: json["otp_code"].toString(),
   );
 
   Map<String, dynamic> toJson() => {

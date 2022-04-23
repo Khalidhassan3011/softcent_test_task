@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 0.0.0+1
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
@@ -28,6 +28,14 @@ dependencies:
 
   # font
   google_fonts: ^2.3.1
+
+  # pin field
+  pin_code_fields: ^7.4.0
+
+  # local notification
+  flutter_local_notifications: ^9.4.0
+
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:

@@ -115,6 +115,7 @@ class SignUpPageView extends GetView<SignUpPageController> {
           decoration: BoxDecoration(
             color: AppColors.colorTextFieldBg,
             borderRadius: BorderRadius.circular(Dimens.inputRadius),
+            border: Border.all(color: AppColors.colorBorderInput),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -141,6 +142,7 @@ class SignUpPageView extends GetView<SignUpPageController> {
           decoration: BoxDecoration(
             color: AppColors.colorTextFieldBg,
             borderRadius: BorderRadius.circular(Dimens.inputRadius),
+            border: Border.all(color: AppColors.colorBorderInput),
           ),
           child: Align(
             alignment: Alignment.centerLeft,
@@ -159,12 +161,16 @@ class SignUpPageView extends GetView<SignUpPageController> {
           horizontal: Dimens.marginH,
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // check box
             Transform.scale(
               scale: .8,
               child: Obx(
                 () => Checkbox(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(2),
+                  ),
                   value: controller.termsAgreed.value,
                   onChanged: (value) {
                     controller.onTermsAndConditionClick();

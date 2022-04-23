@@ -1,4 +1,5 @@
 import '../util/exports.dart';
+import 'my_appbar_icon.dart';
 
 class MyKeyboard extends StatelessWidget {
   final Function(String value) onChange;
@@ -19,6 +20,7 @@ class MyKeyboard extends StatelessWidget {
         color: AppColors.colorKeyboardBg,
       ),
       height: height ?? Dimens.keyboardHeight,
+      padding: EdgeInsets.symmetric(horizontal: Dimens.marginH),
       child: _numKeypad,
     );
   }
@@ -45,7 +47,7 @@ class MyKeyboard extends StatelessWidget {
         children: [
           _numKey(""),
           _numKey("0"),
-          _actionKey("x"),
+          _actionKey(),
         ],
       );
 
@@ -61,14 +63,11 @@ class MyKeyboard extends StatelessWidget {
         ),
       );
 
-  Widget _actionKey(String sign) => Expanded(
+  Widget _actionKey() => Expanded(
         child: InkWell(
           onTap: () => onClear(),
           child: Center(
-            child: Text(
-              sign,
-              style: Style.textStyle.buttonTextKeyboard,
-            ),
+            child: MyAppbarIcon.close,
           ),
         ),
       );

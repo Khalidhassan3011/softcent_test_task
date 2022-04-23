@@ -34,7 +34,7 @@ class Dimens {
 
   // keyboard
   static final double keyboardButtonSize = 24.sp;
-  static final double keyboardHeight = 300.h;
+  static final double keyboardHeight = 310.h;
 
   // input
   static const double inputRadius = 7;

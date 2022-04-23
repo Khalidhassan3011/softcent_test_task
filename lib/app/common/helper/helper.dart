@@ -66,4 +66,28 @@ class Helper {
   static bool isValidNumberLength(ContactNumber contactNumber) {
     return contactNumber.number.length + 1 <= getNumberLength(contactNumber);
   }
+
+  static String formatNumberAsCountryCode(ContactNumber contactNumber) {
+    String _num = "${contactNumber.numberFormat.countryCode} ";
+
+    String _tempNum = contactNumber.number;
+
+    contactNumber.numberFormat.numberFormat.split("").forEach((element) {
+      int _count = int.parse(element);
+
+      _num += _tempNum.substring(0, _count);
+      _tempNum = _tempNum.substring(_count);
+      _num += " ";
+    });
+
+    return _num;
+  }
+
+  static String formatTwoDigit(int number) {
+    return number > 9? number.toString() : "0"+number.toString();
+  }
+
+  static String secondToMinute(int second) {
+    return "${formatTwoDigit(second ~/ 60)} : ${formatTwoDigit(second % 60)}";
+  }
 }

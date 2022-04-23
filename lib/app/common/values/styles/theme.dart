@@ -14,6 +14,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(Dimens.buttonRadius),
           ),
+          elevation: 0,
           minimumSize: Size(250, Dimens.buttonHeight),
           textStyle: TextStyle(
             fontWeight: FontWeight.w500,

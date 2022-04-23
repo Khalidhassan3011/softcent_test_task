@@ -13,6 +13,8 @@ class Constants {
   static _External get external => _External();
 
   static _ArgumentsKeyword get argumentsKeyword => _ArgumentsKeyword();
+
+  static _Value get value => _Value();
 }
 
 class _AppInfo {
@@ -31,4 +33,8 @@ class _External {
 
 class _ArgumentsKeyword {
   String number = "number";
+}
+
+class _Value {
+  int resendCode = 120; // seconds
 }

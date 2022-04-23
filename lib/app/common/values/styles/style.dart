@@ -49,6 +49,12 @@ class _TextStyle {
     color: AppColors.colorTextGrey,
   );
 
+  final TextStyle resend = GoogleFonts.dmSans(
+    fontSize: Dimens.fontSize16,
+    color: AppColors.colorTextGrey,
+    letterSpacing: -.36,
+  );
+
 
 
   static final TextStyle _textStyle = TextStyle(

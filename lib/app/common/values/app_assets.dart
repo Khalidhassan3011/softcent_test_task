@@ -14,4 +14,5 @@ class _Gif {}
 
 class _Image {
   String get otp => 'assets/image/otp.png';
+  String get otpInActive => 'assets/image/otp_inactive.png';
 }

@@ -81,6 +81,8 @@ class VerificationCodePageView extends GetView<VerificationCodePageController> {
         fontSize: Dimens.fontSize16,
         fontWeight: FontWeight.w400,
         color: AppColors.colorTextGrey,
+        wordSpacing: 4,
+        letterSpacing: -.5,
       ),
     ),
   );

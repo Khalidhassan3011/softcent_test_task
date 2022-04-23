@@ -10,6 +10,7 @@ class AppColors {
   static const Color colorKeyboardBg = Color(0xFFF9F9F9);
   static const Color colorTextFieldBg = Color(0xFFF8F8F8);
   static const Color colorOtpFieldBg = Color(0xFFF5F5F5);
+  static const Color colorBorderInput = Color(0xFFF3F3F3);
 
   static const Color colorTextBlack = Color(0xFF040415);
   static const Color colorTextGrey = Color.fromRGBO(4, 4, 21, 0.5);

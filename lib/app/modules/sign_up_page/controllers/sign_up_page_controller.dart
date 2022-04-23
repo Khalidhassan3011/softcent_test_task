@@ -31,7 +31,7 @@ class SignUpPageController extends GetxController implements SignUpPageAbstract 
       Utils.showSnackbar("termsRequest".tr);
     } else {
       Get.toNamed(Routes.verificationCode, arguments: {
-        Constants.argumentsKeyword.number: number,
+        Constants.argumentsKeyword.number: number.value,
       });
     }
   }
@@ -47,8 +47,6 @@ class SignUpPageController extends GetxController implements SignUpPageAbstract 
     if (Helper.isValidNumberLength(number.value)) {
       number.value.number += value;
       number.refresh();
-    } else {
-      Utils.showSnackbar("invalidNumber".tr);
     }
   }
 
