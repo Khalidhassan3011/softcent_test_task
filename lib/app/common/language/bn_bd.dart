@@ -17,4 +17,12 @@ const Map<String, String> bn = {
   // button
   "continue": "Continue",
   "next": "Next",
+
+  // error
+  "invalidNumber": "You try to input invalid number",
+
+  // hints
+  "termsRequest": "Agree Terms & Conditions to continue",
+
+  "exitAppHints" : "Are you sure you want to exit?",
 };
