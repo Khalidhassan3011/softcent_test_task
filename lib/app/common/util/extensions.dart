@@ -111,3 +111,20 @@ extension RemoveLastLetter on String {
     return substring(0, length - 1);
   }
 }
+
+extension DemoNumber on String {
+  demoNumber() {
+    String _number = "";
+
+    List<String> _numbers = split("");
+
+    for (var value in _numbers) {
+      for (int i = 0; i < int.parse(value); i++) {
+        _number += "X";
+      }
+      _number += " ";
+    }
+
+    return _number;
+  }
+}
