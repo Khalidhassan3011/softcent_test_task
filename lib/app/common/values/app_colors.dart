@@ -6,7 +6,7 @@ class AppColors {
 
   static const Color colorPrimary = Color(0xFF2DBC77);
 
-  static const Color colorBg = Color(0xFFE5E5E5);
+  static const Color colorBg = Color(0xFFFFFFFF);
   static const Color colorKeyboardBg = Color(0xFFF9F9F9);
   static const Color colorTextFieldBg = Color(0xFFF8F8F8);
   static const Color colorOtpFieldBg = Color(0xFFF5F5F5);
