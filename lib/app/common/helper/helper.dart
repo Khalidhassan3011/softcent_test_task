@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/services.dart';
+import 'package:softcent_test_task/app/models/contact_number.dart';
+import '../../models/number_format.dart';
 import '../util/exports.dart';
 
 part 'helper_data/helper_data.dart';
@@ -47,5 +49,21 @@ class Helper {
         ),
       ),
     );
+  }
+
+  static int getNumberLength(ContactNumber contactNumber) {
+    int _maxNumLength = 0;
+
+    List<String> letters = contactNumber.numberFormat.numberFormat.split("");
+
+    for (var letter in letters) {
+      _maxNumLength += int.parse(letter);
+    }
+
+    return _maxNumLength;
+  }
+
+  static bool isValidNumberLength(ContactNumber contactNumber) {
+    return contactNumber.number.length + 1 <= getNumberLength(contactNumber);
   }
 }
