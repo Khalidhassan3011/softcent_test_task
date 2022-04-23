@@ -18,7 +18,7 @@ class Dimens {
   static final double fontSize32 = 32.sp;
 
   // appbar
-  static final double appbarTopMargin = 53.h;
+  static final double appbarTopMargin = 26.h;
   static final double backButtonHeightWidth = 48.h;
   static const double backButtonRadius = 16;
 
@@ -31,4 +31,12 @@ class Dimens {
 
   // margin
   static final double marginH = 24.w;
+
+  // keyboard
+  static final double keyboardButtonSize = 24.sp;
+  static final double keyboardHeight = 300.h;
+
+  // input
+  static const double inputRadius = 7;
+  static final double inputHeight = 46.h;
 }

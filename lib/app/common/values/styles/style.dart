@@ -1,3 +1,5 @@
+import 'package:google_fonts/google_fonts.dart';
+
 import '../../util/exports.dart';
 
 class Style {
@@ -28,6 +30,26 @@ class _TextStyle {
     fontSize: Dimens.fontSize16,
     fontWeight: FontWeight.w700,
   );
+
+  final TextStyle buttonTextKeyboard = GoogleFonts.dmSans(
+    fontSize: Dimens.keyboardButtonSize,
+    fontWeight: FontWeight.w500,
+    color: AppColors.colorTextGrey,
+  );
+
+  final TextStyle appTitle = GoogleFonts.dmSans(
+    fontSize: Dimens.appTitle,
+    fontWeight: FontWeight.w700,
+    color: AppColors.colorPrimary,
+  );
+
+  final TextStyle hints = GoogleFonts.dmSans(
+    fontSize: Dimens.fontSize14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.colorTextGrey,
+  );
+
+
 
   static final TextStyle _textStyle = TextStyle(
     color: Colors.black,

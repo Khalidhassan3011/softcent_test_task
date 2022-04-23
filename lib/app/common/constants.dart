@@ -11,6 +11,8 @@ class Constants {
   static _Language get language => _Language();
 
   static _External get external => _External();
+
+  static _ArgumentsKeyword get argumentsKeyword => _ArgumentsKeyword();
 }
 
 class _AppInfo {
@@ -25,4 +27,8 @@ class _Language {
 
 class _External {
   String terms = "https://google.com";
+}
+
+class _ArgumentsKeyword {
+  String number = "number";
 }
