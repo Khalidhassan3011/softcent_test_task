@@ -12,7 +12,7 @@ class SoftcentTestTask extends GetView<AppController> {
       context,
       orientation: Orientation.portrait,
       deviceSize: Size(Get.width, Get.height),
-      designSize: Get.size,
+      designSize: const Size(375, 812),
     );
 
     return GetMaterialApp(
