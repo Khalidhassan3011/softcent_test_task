@@ -37,4 +37,9 @@ class ApiHelperImpl extends GetConnect with ApiHelper {
   Future<Response> getOTP() async {
     return await get("9a3d57b9-fa3f-402e-99f9-982134108d18");
   }
+
+  @override
+  Future<Response> getTransaction() async {
+    return await get("4572d649-fda0-4c84-991d-08ba0961205d");
+  }
 }
